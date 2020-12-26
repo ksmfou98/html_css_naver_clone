@@ -1,0 +1,51 @@
+/* Cascading Style Sheet */
+/* 선택자(selector) */
+#header-center {
+    margin: 0 auto;
+    width: 1080px;
+}
+
+#header-search  h1 {
+    width: 198px;
+    height: 48px;
+    display: inline-block;
+    background-image: url(../img/sp_search.png);
+    background-position: -4px -3px;
+    
+    
+}
+#header-search a{
+    text-decoration: none;
+}
+
+#header-search h1 span{
+    display:none;
+}
+
+/*
+#header-center h1 {
+  자손 선택자
+}
+*/
+
+#header-search h2 {
+    display: none;
+}
+
+#header-search fieldset {
+    margin-left:20px;
+    padding: 13px 15px;
+    width: 444px;
+    height: 30px;
+    display: inline-block;
+    border: 2px solid #03cf5d;
+}
+
+.blind {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
