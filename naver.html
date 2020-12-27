@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <div id="header-center"> <!-- 가운데 정렬용 div -->
+      <div class="center-align"> <!-- 가운데 정렬용 div -->
         <!-- 속성명: 속성값; 속성명2: 속성값2;  -->
         <!-- 인라인 스타일 -->
         <div>
@@ -26,29 +26,34 @@
           <fieldset>
             <legend class="blind">검색</legend>
             <input />
-            <button class="blind">검색</button>
+            <button>
+              <span class="blind">검색</span>
+              <span id="search-image"></span>
+            </button>
           </fieldset>
         </div>
       </div>
     </header>
     <nav>
-      <ul> <!-- unordered list --> <!-- ol 태그도 있어요 ordered list -->
-        <li>메일</li> <!-- list item -->
-        <li>카페</li> <!-- list item -->
-        <li>블로그</li> <!-- list item -->
-        <li>지식인</li> <!-- list item -->
-        <li>쇼핑</li> <!-- list item -->
-        <li>네이버페이</li> <!-- list item -->
-        <li>네이버쇼핑</li> <!-- list item -->
-      </ul>
+      <div class="center-align">
+        <ul> <!-- unordered list --> 
+          <li><a href="https://mail.naver.com"><span></span> <span class="blind">메일</span></a></li> <!-- list item -->
+          <li><a href="https://cafe.naver.com"><span></span> <span class="blind">카페</span></a></li> <!-- list item -->
+          <li><a href="https://blog.naver.com"><span></span> <span class="blind">블로그</span></a></li> <!-- list item -->
+          <li><a href="https:://kin.naver.com"><span></span> <span class="blind">지식인</span></a></li> <!-- list item -->
+          <li><a href="https://order.pay.naver.com/home"><span></span> <span class="blind">쇼핑</span></a></li> <!-- list item -->
+          <li><a href="https://order.pay.naver.com/home"><span></span> <span class="blind">네이버페이</span></a></li> <!-- list item -->
+          
+        </ul>
+      </div>
     </nav>
     <main>
       <h2>실시간 검색어</h2>
       <h3>연합뉴스</h3>
       <ol>
-        <li>충격) 제로초 지금 목아파...</li>
-        <li>속보) 방송 종료하고 싶어</li>
-        <li>중대발표: 다음 강좌 언제 될지 모르겠다</li>
+        <li>충격) 배아프다</li>
+        <li>속보) 여기까지 만드는데 2일걸림</li>
+        <li>중대발표: 과연 다 완성시킬수 있을까</li>
       </ol>
       <h3>언론사 목록</h3>
       <ul>
