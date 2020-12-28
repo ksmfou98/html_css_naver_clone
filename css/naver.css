@@ -1,6 +1,7 @@
 
 * {
     box-sizing: border-box; /* width를 컨텐츠 기준에서 보더 기준으로 바꾸는거 */
+    
 }
 
 .blind {
@@ -31,14 +32,19 @@ html, body{
 #header-search {
     clear:both;     /*float:right 을 썻을때 이걸 쓰면 한줄이 분리됨 */
 }
+#header-top span a{
+    text-decoration: none;
+    color:#888;
+}
 #header-top span:first-child{
     color: #888;
     letter-spacing: -1px;  /*글자 사이의 간격임 ㅋ */
     font-size: 11px;
     line-height: 22px; /*세로사이즈 고정 */
     margin-right: 6px;
+    
 }
-#header-top span:nth-child(2){
+#header-top span:nth-child(2) a{
     
     width: 66px;
     height: 16px;
@@ -48,7 +54,7 @@ html, body{
     background-size: 450px;
 
 }
-#header-top span:nth-child(3){
+#header-top span:nth-child(3) a{
     
     width: 40px;
     height: 16px;
