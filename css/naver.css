@@ -36,7 +36,11 @@ html, body{
     letter-spacing: -1px;  /*글자 사이의 간격임 ㅋ */
     font-size: 11px;
     line-height: 22px; /*세로사이즈 고정 */
+<<<<<<< HEAD
     margin-right : 6px;
+=======
+    margin-right:6px;
+>>>>>>> 75011faf5726aa7d1687b19f267b06b80e6f00cb
 }
 #header-top span:nth-child(2){
     
