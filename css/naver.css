@@ -1,0 +1,178 @@
+
+* {
+    box-sizing: border-box; /* width를 컨텐츠 기준에서 보더 기준으로 바꾸는거 */
+}
+
+.blind {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
+
+html, body{
+    margin:0;
+    padding:0;
+}
+
+
+
+.center-align {
+    margin: 0 auto;
+    width: 1080px;
+}
+
+#header-top {
+    float:right;
+}
+
+#header-search {
+    clear:both;     /*float:right 을 썻을때 이걸 쓰면 한줄이 분리됨 */
+}
+#header-top span:first-child{
+    color: #888;
+    letter-spacing: -1px;  /*글자 사이의 간격임 ㅋ */
+    font-size: 11px;
+    line-height: 22px; /*세로사이즈 고정 */
+    margin-right : 6px;
+}
+#header-top span:nth-child(2){
+    
+    width: 66px;
+    height: 16px;
+    background-image: url(../img/naver_icons.png);
+    display:inline-block;
+    background-position: -711px -717px;
+    background-size: 450px;
+
+}
+#header-top span:nth-child(3){
+    
+    width: 40px;
+    height: 16px;
+    background-image: url(../img/naver_icons.png);
+    display:inline-block;
+    background-position: -838px -618px;
+    background-size: 450px;
+    margin-left:6px;
+
+}
+
+#header-search  h1 {
+    
+    width: 198px;
+    height: 48px;
+    display: inline-block;
+    background-image: url(../img/sp_search.png);
+    background-position: -4px -3px;
+    vertical-align: middle; /* 형제 테그끼리 정렬할때 사용 (display가 inline, inline-block이어야만 적용돤다.*/
+    position: relative;
+    top: -6px;
+}
+#header-search a{
+    text-decoration: none;
+    
+}
+
+#header-search h1 span{
+    display:none;
+}
+
+
+
+#header-search h2 {
+    display: none;
+}
+
+#header-search fieldset {
+    margin-left:20px;
+    padding: 13px 15px;
+    width: 521px;
+    height: 49px;
+    display: inline-block;
+    border: 2px solid #03cf5d; /* hex표기법임 앞에2개 r 뒤에2개 g 뒤에2개 b */
+    vertical-align: middle;
+    position:relative;
+}
+
+#header-search fieldset input{
+    border: none;
+    padding: 0;
+    outline:none; /* 검색창 테두리 없애기 */
+    vertical-align:top;
+    width: 405px;
+    height: 23px;
+}
+
+#header-search fieldset button{
+    width:49px;
+    height:49px;
+    border: none;
+    padding: 0;
+    background : #03cf5d;
+    position:absolute;
+    right:-2px;
+    top:-2px;
+}  
+
+#search-image{
+    background-image: url(../img/sp_search.png);
+    background-position: -2px -59px;
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    margin: 14px;
+}
+
+nav ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+nav li{
+    display: inline-block;
+}
+
+
+
+nav li span:first-child {
+    height: 16px;
+    display: inline-block;
+    background-image: url(../img/sp_nav.png);
+    background-repeat: no-repeat;
+    margin-left: 14px;
+}
+nav li:first-child span:first-child {
+    width: 25px;
+    background-position: 0 -285px;
+    margin-left: 0;
+}
+
+nav li:nth-child(2) span:first-child {
+    width: 27px;
+    background-position: -279px -52px;
+}
+
+nav li:nth-child(3) span:first-child {
+    width: 40px;
+    background-position: -100px -182px;
+}
+
+nav li:nth-child(4) span:first-child {
+    width: 40px;
+    background-position: -101px -156px;
+}
+
+nav li:nth-child(5) span:first-child {
+    width: 26px;
+    background-position: -279px -156px;
+}
+
+nav li:nth-child(6) span:first-child {
+    width: 25px;
+    background-position: -70px -285px;
+}
