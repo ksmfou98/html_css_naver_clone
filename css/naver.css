@@ -16,8 +16,12 @@
 html, body{
     margin:0;
     padding:0;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
 }
 
+.relative {
+    position: relative;
+}
 
 
 .center-align {
@@ -25,12 +29,19 @@ html, body{
     width: 1080px;
 }
 
+header {
+    height: 170px;
+}
+
 #header-top {
     float:right;
+    margin-top: 8px;
 }
+
 
 #header-search {
     clear:both;     /*float:right 을 썻을때 이걸 쓰면 한줄이 분리됨 */
+    padding-top:20px;
 }
 #header-top span a{
     text-decoration: none;
@@ -75,7 +86,8 @@ html, body{
     background-position: -4px -3px;
     vertical-align: middle; /* 형제 테그끼리 정렬할때 사용 (display가 inline, inline-block이어야만 적용돤다.*/
     position: relative;
-    top: -6px;
+    top: -5px;
+    left: 1px;
 }
 #header-search a{
     text-decoration: none;
@@ -93,7 +105,7 @@ html, body{
 }
 
 #header-search fieldset {
-    margin-left:20px;
+    margin-left:18px;
     padding: 13px 15px;
     width: 521px;
     height: 49px;
@@ -108,7 +120,7 @@ html, body{
     padding: 0;
     outline:none; /* 검색창 테두리 없애기 */
     vertical-align:top;
-    width: 405px;
+    width: 385px;
     height: 23px;
 }
 
@@ -123,6 +135,28 @@ html, body{
     top:-2px;
 }  
 
+#search-keyboard{
+    background-image: url(../img/sp_search.png);
+    background-repeat:no-repeat;
+    background-position: -33px -60px;
+    width: 19px;
+    height: 11px;
+    display:inline-block;
+    margin: 0 6px;
+    vertical-align: middle; /*나란히 있는걸 가운데 정렬해줌 */
+}
+
+#search-history{
+    
+    background: url(../img/sp_search.png) no-repeat -87px -60px;
+    width: 9px;
+    height: 4px;
+    display:inline-block;
+    margin: 0 6px;
+    vertical-align: middle; /*위에꺼랑 마찬가지로 가운데 정렬 */
+    
+}
+
 #search-image{
     background-image: url(../img/sp_search.png);
     background-position: -2px -59px;
@@ -132,11 +166,18 @@ html, body{
     display: inline-block;
     margin: 14px;
 }
+nav{
+    height:46px;
+    border-top: 1px solid #f1f3f6;
+    border-bottom: 1px solid #d1d8e4;
+    
+}
 
 nav ul{
     margin:0;
-    padding:0;
+    padding:16px 0 0 4px;
     list-style: none;
+    display: inline-block;
 }
 
 nav li{
@@ -150,7 +191,7 @@ nav li span:first-child {
     display: inline-block;
     background-image: url(../img/sp_nav.png);
     background-repeat: no-repeat;
-    margin-left: 14px;
+    margin-left: 10px;
 }
 nav li:first-child span:first-child {
     width: 25px;
@@ -181,4 +222,81 @@ nav li:nth-child(5) span:first-child {
 nav li:nth-child(6) span:first-child {
     width: 25px;
     background-position: -70px -285px;
+}
+
+nav li:nth-child(7) span:first-child {
+    width: 35px;
+    background-position: -125px -130px;
+}
+
+nav li:nth-child(8) span:first-child {
+    width: 26px;
+    background-position: -279px -208px;
+}
+
+nav li:nth-child(9) span:first-child {
+    width: 26px;
+    background-position: -128px -104px;
+}
+
+nav li:nth-child(10) span:first-child {
+    width: 26px;
+    background-position: -36px -259px;
+}
+
+nav li:nth-child(11) span:first-child {
+    width: 39px;
+    background-position: -151px -156px;
+}
+
+nav li:nth-child(12) span:first-child {
+    width: 26px;
+    background-position: -279px -130px;
+}
+
+nav li:nth-child(13) span:first-child {
+    width: 26px;
+    background-position: -234px -233px;
+}
+
+nav li:nth-child(14) span:first-child {
+    width: 26px;
+    background-position: -72px -259px;
+}
+
+nav li:nth-child(15) span:first-child {
+    width: 13px;
+    background-position: -140px -78px;
+}
+
+nav li:nth-child(16) span:first-child {
+    width: 26px;
+    background-position: -279px 0;
+}
+
+nav li.more:first-child span:first-child {
+    width: 55px;
+    background-position: 0 -104px;
+}
+
+
+
+.nav-divider{
+    display:inline-block;
+    margin: 18px 16px 0;
+    width: 1px;
+    height: 14px;
+    background: #ebeef3;
+}
+
+#search-ranking {
+    position: absolute;
+    top:16px;
+    right:100px;
+}
+
+#rank-number{
+    margin-top: -9px;
+    color: #00ab33;
+    font-size: 16px;
 }
